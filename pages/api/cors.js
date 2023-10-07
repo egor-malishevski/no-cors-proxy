@@ -5,9 +5,9 @@ const Cors = async (req, res) => {
     const resProxy = await fetch({ ...req.query, "mode": "no-cors" });
     const data = await resProxy.json();
 
-    res.status(200).json(data);
+    res.status(200).send(data);
   } catch (error) {
-    res.status(400).json({ error: error.toString() });
+    res.status(400).send(error.toString());
   }
 };
 
