@@ -4,7 +4,7 @@ const Cors = async (req, res) => {
   const { url } = req.query;
   try {
     const resProxy = await fetch(url);
-    res.status(200).send(resProxy.body);
+    res.status(200).send(resProxy.json());
   } catch (error) {
     res.status(400).send(error.toString());
   }
