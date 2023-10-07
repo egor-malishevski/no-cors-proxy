@@ -13,7 +13,7 @@ const Cors = async (req, res) => {
     } else {
        const resProxy = await fetch(url, { ...req, "mode": "no-cors" });
 
-       const data = await resProxy.json();
+       const data = await resProxy.text();
 
        res.status(200).json({ data });
     }
