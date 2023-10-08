@@ -16,6 +16,7 @@ const Cors = async (req, res) => {
   try {
     const { data } = await axios('https://chat.aivvm.com/api/chat', {
       method: "POST",
+      withCredentials: true,
       headers,
       data: req ? req.body : '',
     });
