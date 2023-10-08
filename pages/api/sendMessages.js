@@ -1,16 +1,19 @@
 import axios from "axios";
 
 const headers = {
-  "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
-  "Accept": "*/*",
-  "Accept-language"    : "en,fr-FR;q=0.9,fr;q=0.8,es-ES;q=0.7,es;q=0.6,en-US;q=0.5,am;q=0.4,de;q=0.3",
-  "Origin": "https://chat.aivvm.com",
-  "Referer": "https://chat.aivvm.com/",
-  "Sec-Fetch-Dest"     : "empty",
-  "Sec-Fetch-Mode"     : "no-cors",
-  "Sec-Fetch-Site"     : "same-origin",
-  "content-type": "text/plain",
-  "Cookie": "cf_clearance=.hFni6AITyC9RvGeH5WN.FZAYEWSBTUkxtmw6SOVRu8-1696706894-0-1-9c4ec4c1.f7f173e9.a42e3e70-0.2.1696706894"
+  "accept": "*/*",
+  "accept-language": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+  "content-type": "application/json",
+  "sec-ch-ua": "\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Opera\";v=\"102\"",
+  "sec-ch-ua-mobile": "?0",
+  "sec-ch-ua-platform": "\"macOS\"",
+  "sec-fetch-dest": "empty",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-site": "same-origin",
+  "cookie": "cf_clearance=.hFni6AITyC9RvGeH5WN.FZAYEWSBTUkxtmw6SOVRu8-1696706894-0-1-9c4ec4c1.f7f173e9.a42e3e70-0.2.1696706894",
+  "Referer": "https://chat.aivvm.com/ru",
+  "Referrer-Policy": "same-origin",
+  "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 OPR/102.0.0.0",
 }
 
 const Cors = async (req, res) => {
