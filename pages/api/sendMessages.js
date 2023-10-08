@@ -8,12 +8,12 @@ const headers = {
   "sec-ch-ua-mobile": "?0",
   "sec-ch-ua-platform": "\"macOS\"",
   "sec-fetch-dest": "empty",
-  "sec-fetch-mode": "cors",
+  "sec-fetch-mode": "no-cors",
   "sec-fetch-site": "same-origin",
   "cookie": "cf_clearance=.hFni6AITyC9RvGeH5WN.FZAYEWSBTUkxtmw6SOVRu8-1696706894-0-1-9c4ec4c1.f7f173e9.a42e3e70-0.2.1696706894",
   "Referer": "https://chat.aivvm.com/ru",
   "Referrer-Policy": "same-origin",
-  "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 OPR/102.0.0.0",
+  "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 OPR/102.0.0.0",
 }
 
 const Cors = async (req, res) => {
