@@ -10,6 +10,7 @@ const headers = {
   "Sec-Fetch-Mode"     : "no-cors",
   "Sec-Fetch-Site"     : "same-origin",
   "content-type": "text/plain",
+  "Cookie": "cf_clearance=.hFni6AITyC9RvGeH5WN.FZAYEWSBTUkxtmw6SOVRu8-1696706894-0-1-9c4ec4c1.f7f173e9.a42e3e70-0.2.1696706894"
 }
 
 const Cors = async (req, res) => {
