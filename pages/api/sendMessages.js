@@ -23,6 +23,10 @@ const Cors = async (req, res) => {
       withCredentials: true,
       headers,
       data: req ? req.body : '',
+      proxy: {
+        host: '104.21.33.192',
+        port: 443,
+      }
     });
 
     res.status(200).json({ data });
