@@ -15,7 +15,7 @@ const headers = {
   //"Sec-Fetch-Dest"     : "empty",
   //"Sec-Fetch-Mode"     : "cors",
   //"Sec-Fetch-Site"     : "same-origin",
-  "content-type": "application/json",
+  "content-type": "text/plain",
 }
 
 const Cors = async (req, res) => {
@@ -23,10 +23,10 @@ const Cors = async (req, res) => {
     const { data } = await axios('https://chat.aivvm.com/api/chat', {
       method: "POST",
       headers,
-      data: req.body,
+      data: req ? req.body : '',
     });
 
-    res.status(200).json({ data }, { headers: corsHeaders });
+    res.status(200).json({ data });
   } catch (error) {
     res.status(400).json({ error: error.toString() });
   }
